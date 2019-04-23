@@ -1,0 +1,101 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Bookman, sans-serif;
+    height: 100%;
+}
+
+header {
+    margin: 0;
+    height: 40%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-image: url('images/design1_image1_edited.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left top;
+
+}
+
+header h1 {
+    font-size: 35px;
+    color: white;
+    background-color: black;
+    opacity: 0.4;
+}
+
+main {
+    margin-top: 0;
+    position: relative;
+    top: 0;
+}
+
+.image {
+    position: absolute;
+    top: -50px;
+    right: 50px;
+
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: #f1f1f1;
+    opacity: 0.5;
+    position:absolute;
+    /* Make it stick, even on scroll */
+    top: 320px;
+    overflow: hidden;
+    /* Enable scrolling if the sidenav has too much content */
+    float: left;
+}
+
+li a {
+    display: block;
+    width: 100px;
+    height: 75px;
+    padding: 8px 16px;
+}
+
+.title {
+    margin-top: 0px;
+    padding: 5px;
+    background-color: #143D80;
+    /*background-image: url(images/nysl_logo.png);
+  background-position: right;
+  background-repeat: no-repeat;*/
+    opacity: 0.9;
+    color: white;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.content {
+    position: absolute;
+    left: 150px;
+    padding: 10px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+em {
+    font-weight: bold;
+}
+
+h2 {
+    text-transform: uppercase;
+    opacity: 0.8;
+}
