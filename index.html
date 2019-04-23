@@ -56,6 +56,22 @@
         </div>
 
     </main>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.fontSize = "0.8em";
+                document.getElementById("header").style.height = "20%";
+            } else {
+                document.getElementById("header").style.fontSize = "1em";
+                document.getElementById("header").style.height = "40%";
+            }
+        }
+
+    </script>
 </body>
 
 </html>

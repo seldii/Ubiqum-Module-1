@@ -11,13 +11,14 @@
 <body>
 
     <header>
-         <a href="home.html"><h1 id="main-heading">Northside Youth Soccer League</h1></a>
-         
+        <a href="home.html">
+            <h1 id="main-heading">Northside Youth Soccer League</h1>
+        </a>
+
         <nav class="left">
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                
                 <li><a href="rules.html">Rules & Policies</a></li>
                 <li class="active">Contact</li>
             </ul>
@@ -39,7 +40,22 @@
             <p>We will reply to your email as soon as we can.</p>
         </div>
     </main>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.fontSize = "0.8em";
+                document.getElementById("header").style.height = "20%";
+            } else {
+                document.getElementById("header").style.fontSize = "1em";
+                document.getElementById("header").style.height = "40%";
+            }
+        }
+
+    </script>
 </body>
 
 </html>

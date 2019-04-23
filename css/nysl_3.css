@@ -139,9 +139,8 @@ header h1 {
 }
 
 main {
-    top: 40%;
     padding: 12px 10px 20px 10px;
-    margin: 225px 10px 0px 10px;
+    margin: 235px 10px 0px 10px;
     max-width: 100%;
 }
 
@@ -199,6 +198,7 @@ main:after {
 
 
 .content-row {
+    margin: 0px;
     list-style-type: none;
     padding-left: 0;
     display: flex;
@@ -331,7 +331,7 @@ td {
 form {
     margin: 0 auto;
     padding: 10px;
-    width: 70%;
+    width: 80%;
     background-color: rgb(213, 230, 224, 0.4);
     display: flex;
     flex-direction: column;
@@ -348,7 +348,14 @@ form {
     align-content: space-between;
 }
 
-
+.col-small {
+    width:50%;
+    padding: 0px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
 .row {
     width: 100%;
@@ -361,15 +368,37 @@ form {
 }
 
 .small-row {
-    
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: baseline;
 }
 
+.row-gender, .row-grade {
+    width: 66%;
+}
+
 .small-row label {
-    width: 40%;
+    width: 30%;
+}
+
+.small-row input {
+    width: 65%;
+}
+
+#radio {
+    width: 5%;
+}
+.radio {
+    
+}
+
+.row.gender {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
 }
 #uniform {
     display: inline-flex;

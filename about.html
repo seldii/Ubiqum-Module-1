@@ -12,12 +12,14 @@
 
     <header>
 
-         <a href="home.html"><h1 id="main-heading">Northside Youth Soccer League</h1></a>
+        <a href="home.html">
+            <h1 id="main-heading">Northside Youth Soccer League</h1>
+        </a>
 
 
         <nav class="left">
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="active">About</li>
                 <li><a href="rules.html">Rules & Policies</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -34,7 +36,7 @@
         </div>
     </header>
     <main>
-        
+
 
         <div class="content" id="about">
             <div class="box">
@@ -52,7 +54,22 @@
         </div>
     </main>
 
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.fontSize = "0.8em";
+                document.getElementById("header").style.height = "20%";
+            } else {
+                document.getElementById("header").style.fontSize = "1em";
+                document.getElementById("header").style.height = "40%";
+            }
+        }
+
+    </script>
 </body>
 
 </html>
